@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<figure class="highcharts-figure">
+    <div id="container"></div>
+    <p class="highcharts-description">
+        This chart shows the changes made to the database every time the new user logs in.
+    </p>
+</figure>
+
+
+<script>
+    Highcharts.chart('container', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Real time analytics of changes made in the database'
+        },
+        subtitle: {
+            text: 'Source: Dimension Data'
+        },
+        xAxis: {
+            categories: ['Sales Executive', 'Research Scientist', 'Laboratoty Technician', 'Maufacturing Director', 'Healthcare Representative', 'Manager', 'Admin', 'Employee']
+        },
+        yAxis: {
+            title: {
+                text: 'Employee Count'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Number of Job roles',
+            data: [150, 200, 34, 566, 178, 15, 17, 161, 996, 321, 355, 48]
+        }]
+    });
+</script>
+
+
+<script>
+    Highcharts.chart('container', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Real time analytics of changes made in the database'
+        },
+        subtitle: {
+            text: 'Source: Dimension Data'
+        },
+        xAxis: {
+            categories: ['Sales Executive', 'Research Scientist', 'Laboratoty Technician', 'Maufacturing Director', 'Healthcare Representative', 'Manager', 'Admin', 'Employee']
+        },
+        yAxis: {
+            title: {
+                text: 'Employee Count'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Number of Job roles',
+            data: [150, 200, 34, 566, 178, 15, 17, 161, 996, 321, 355, 48]
+        }]
+    });
+</script>
+
+
+<script>
+    Highcharts.chart('container', {
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: 'Real time analytics of changes made in the database'
+        },
+        subtitle: {
+            text: 'Source: Dimension Data'
+        },
+        xAxis: {
+            categories: ['Sales Executive', 'Research Scientist', 'Laboratoty Technician', 'Maufacturing Director', 'Healthcare Representative', 'Manager', 'Admin', 'Employee']
+        },
+        yAxis: {
+            title: {
+                text: 'Employee Count'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Number of Job roles',
+            data: [150, 200, 34, 566, 178, 15, 17, 161, 996, 321, 355, 48]
+        }]
+    });
+</script>
